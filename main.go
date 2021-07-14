@@ -14,21 +14,19 @@ type Page struct {
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	NetInterface, _ := net.InterfaceAddrs()
-	for _, NetInterface := range NetInterface {
-		netIP, ok := NetInterface.(*net.IPNet)
-		if ok && !netIP.IP.IsLoopback() && netIP.IP.To4() != nil {
-			IPaddr := netIP.String()
-
-			fmt.Println("Connected IP: " + IPaddr)
-		}
-	}
 	link := Page{"Indian Poker", 1}
 	temp, err := template.ParseFiles("./files/last_kadai.html")
 	if err != nil {
 		panic(err)
 	}
 	err = temp.Execute(w, link)
+
+	addr, err := net.InterfaceAddrs()
+	fmt.Println(addr)
+	fmt.Println("------------------------------")
+	for _, addr := range addr {
+		fmt.Println(addr.String())
+	}
 }
 
 func main() {
