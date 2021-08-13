@@ -1,0 +1,199 @@
+Index: files/last_kadai.html
+===================================================================
+diff --git a/files/last_kadai.html b/files/last_kadai.html
+deleted file mode 100644
+--- a/files/last_kadai.html	(revision 2ec08f233332161ed1a39766f44a8d02323c061e)
++++ /dev/null	(revision 2ec08f233332161ed1a39766f44a8d02323c061e)
+@@ -1,100 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="ja">
+-
+-<head>
+-    <meta charset="utf-8" />
+-    <title>Indian Poker</title>
+-    <audio src="Special To Me-Slow Edit.mp3" autoplay loop></audio>
+-    <style type="text/css">
+-        body {
+-            background-color: lightblue;
+-            font-size: 30px;
+-            text-align: center;
+-        }
+-        
+-        .kakunou {
+-            width: 300px;
+-            height: 120px;
+-            margin: 0 auto;
+-            padding: 5px;
+-            background-color: green;
+-            border-radius: 5px;
+-        }
+-        
+-        .button {
+-            display: inline-block;
+-            margin: 15px;
+-            width: 125px;
+-            border-radius: 15px;
+-            background-color: red;
+-            cursor: pointer;
+-        }
+-        
+-        .button:hover {
+-            opacity: 1;
+-            background-color: blue;
+-        }
+-        
+-        .button.disabled {
+-            opacity: 1;
+-        }
+-        
+-        .button p {
+-            color: white;
+-            font-weight: bold;
+-        }
+-        
+-        .kakunou p {
+-            color: white;
+-        }
+-        
+-        td {
+-            border: 1px solid;
+-            border-collapse: separate;
+-            border-spacing: 3px;
+-            height: 50px;
+-            width: 35px;
+-        }
+-    </style>
+-</head>
+-
+-<body>
+-    <div class="kakunou">
+-        <p>COM: <span id="com_card"></span></p>
+-        <table>
+-            <tr id="com_card"></tr>
+-        </table>
+-    </div>
+-    <div>
+-        <p>Result: <span id="result"></span></p>
+-    </div>
+-    <div class="kakunou">
+-        <p>Player: <span id="your_card"></span></p>
+-        <table>
+-            <tr id="your_card"></tr>
+-        </table>
+-    </div>
+-    <div>
+-        <button disabled class="button" id="fight" type="button">
+-        <p>FIGHT!</p>
+-    </div>
+-    <div>
+-    <button disabled class="button" id="drop" type="button">
+-        <p>DROP...</p>
+-    </div>
+-    <div>
+-    <button class="button" id="start" type="button">
+-        <p>START</p>
+-    </div>
+-    <div>
+-    <button class="button" id="reset" type="button">
+-        <p>RESET</p>
+-    </div>
+-    <p>FIGHT! - 勝負
+-        DROP - 降りる
+-    </p>
+-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+-    <script type="text/javascript" src="main.js"></script>
+-</body>
+-
+-</html>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1626252756868)
++++ b/.idea/vcs.xml	(date 1626252756868)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1626252756850)
++++ b/.idea/modules.xml	(date 1626252756850)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Go_WebServer.iml" filepath="$PROJECT_DIR$/.idea/Go_WebServer.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/discord.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/discord.xml b/.idea/discord.xml
+new file mode 100644
+--- /dev/null	(date 1626252756861)
++++ b/.idea/discord.xml	(date 1626252756861)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DiscordProjectSettings">
++    <option name="show" value="PROJECT_FILES" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1626252736343)
++++ b/.idea/.gitignore	(date 1626252736343)
+@@ -0,0 +1,8 @@
++# デフォルトの無視対象ファイル
++/shelf/
++/workspace.xml
++# データソースのローカルストレージ用のため無視されるファイル
++/dataSources/
++/dataSources.local.xml
++# エディターベースの HTTP クライアントリクエスト
++/httpRequests/
+Index: .idea/Go_WebServer.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Go_WebServer.iml b/.idea/Go_WebServer.iml
+new file mode 100644
+--- /dev/null	(date 1626252756842)
++++ b/.idea/Go_WebServer.iml	(date 1626252756842)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="Go" enabled="true" />
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
