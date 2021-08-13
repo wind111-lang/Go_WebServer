@@ -16,6 +16,7 @@ type Page struct {
 func Handler(w http.ResponseWriter, r *http.Request) {
 	link := Page{"Connection Status", 1}
 	temp, err := template.ParseFiles("./files/connection.html")
+
 	if err != nil {
 		panic(err)
 	}
