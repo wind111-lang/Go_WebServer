@@ -15,7 +15,7 @@ type Page struct {
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	link := Page{"Indian Poker", 1}
-	temp, err := template.ParseFiles("./files/last_kadai.html")
+	temp, err := template.ParseFiles("./files/connection.html")
 	if err != nil {
 		panic(err)
 	}
